@@ -48,7 +48,7 @@ const Page = (props: PROPS) => {
     setLoading(true);
     const selectedPrompt = selectedTemplate?.aiPrompt;
 
-    const FinalPrompt = JSON.stringify(formData) + ', ' + selectedPrompt +' and also give simple good looking response with emojis if needed';
+    const FinalPrompt = JSON.stringify(formData) + ', ' + selectedPrompt +' and also give a good looking response with emojis if needed';
 
     const result = await chatSession.sendMessage(FinalPrompt);
     setAiOutput(result.response.text());
