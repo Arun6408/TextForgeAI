@@ -9,11 +9,7 @@ import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const user = useUser();
   const router = useRouter();
-  if(user){
-    // return router.push('/dashboard');
-  }
 
   const openDashboard = () =>{
     return router.push('/dashboard');
@@ -101,7 +97,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="grid grid-cols-4 gap-20 px-20 py-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-20 w-full  md:px-20 py-5">
               {cards.map((card, index) => <Card card={card}/>)}
             </div>
           </div>

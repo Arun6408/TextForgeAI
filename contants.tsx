@@ -170,7 +170,7 @@ export const Templetes: Template[] = [
     category: "Productivity",
     icon: "/planner.png",
     aiPrompt:
-      "Create a daily plan based on the user's tasks and goals. Include time blocks for each task and prioritize the most important ones.",
+      "Create a daily plan based on the user's tasks and goals in a clean looking table. Include time blocks for each task and prioritize the most important ones.",
     slug: "daily-planner",
     form: [
       {
