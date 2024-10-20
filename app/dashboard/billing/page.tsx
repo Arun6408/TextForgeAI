@@ -72,11 +72,11 @@ const Page = () => {
       }
   };
   return (
-    <div className="flex flex-col h-[calc(100vh-5rem)] justify-center items-center w-full">
+    <div className="flex flex-col py-4 lg:h-[calc(100vh-5rem)] justify-center items-center w-full">
       <div className="text-5xl font-bold w-full text-center font-serif">
         Upgrade With Monthly Plan
       </div>
-      <div className="flex gap-8 w-full items-center mt-6 justify-center">
+      <div className="flex flex-col-reverse lg:flex-row gap-8 w-full items-center mt-6 justify-center">
         {/* Free Plan */}
         <div className="h-96 flex flex-col justify-center w-72 rounded-xl shadow-lg hover:scale-105 transition-all items-center p-6 gap-4 bg-white">
           <div>
@@ -149,7 +149,7 @@ const Page = () => {
                 <Loader2Icon className="animate-spin mx-2" /> Loading
               </>
             ) : (
-              userSubscription ? 'Currently Active' :'Get'
+              userSubscription ? 'Currently Active' :'Get Premium'
             )}
           </Button>
         </div>
